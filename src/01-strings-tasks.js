@@ -80,9 +80,11 @@ extractNameFromTemplate('Hello, Chuck Norris!');
  *   'John Doe'  => 'J'
  *   'cat'       => 'c'
  */
-function getFirstChar(/* value */) {
-  throw new Error('Not implemented');
+function getFirstChar(value) {
+  return value.slice(0, 1);
 }
+getFirstChar('John Doe');
+getFirstChar('Cat');
 
 /**
  * Removes a leading and trailing whitespace characters from string.
