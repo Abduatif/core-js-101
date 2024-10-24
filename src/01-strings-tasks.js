@@ -152,9 +152,12 @@ removeFirstOccurrences('ABABAB', 'BA');
  *   '<span>' => 'span'
  *   '<a>' => 'a'
  */
-function unbracketTag(/* str */) {
-  throw new Error('Not implemented');
+function unbracketTag(str) {
+  return str.slice(1, -1);
 }
+unbracketTag('<div>');
+unbracketTag('<span>');
+unbracketTag('<a>');
 
 
 /**
