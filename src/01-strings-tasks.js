@@ -133,9 +133,13 @@ repeatString('cat', 3);
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(/* str, value */) {
-  throw new Error('Not implemented');
+function removeFirstOccurrences(str, value) {
+  const regex = new RegExp(value);
+  return str.replace(regex, '');
 }
+removeFirstOccurrences('To be or not to be', 'not');
+removeFirstOccurrences('I like legends', 'end');
+removeFirstOccurrences('ABABAB', 'BA');
 
 /**
  * Remove the first and last angle brackets from tag string
