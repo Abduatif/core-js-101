@@ -115,10 +115,12 @@ removeLeadingAndTrailingWhitespaces('Hello, World!');
  *   'A', 5  => 'AAAAA'
  *   'cat', 3 => 'catcatcat'
  */
-function repeatString(/* value, count */) {
-  throw new Error('Not implemented');
+function repeatString(value, count) {
+  return value.repeat(count);
 }
 
+repeatString('A', 5);
+repeatString('cat', 3);
 /**
  * Remove the first occurrence of string inside another string
  *
