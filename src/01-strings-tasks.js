@@ -63,11 +63,13 @@ getStringFromTemplate('Abdulatif', 'Abdujabborov');
  *   'Hello, John Doe!' => 'John Doe'
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
-function extractNameFromTemplate(/* value */) {
-  throw new Error('Not implemented');
+function extractNameFromTemplate(value) {
+  const words = value.split(' ');
+  return `${words[1]} ${words[2].slice(0, -1)}`;
 }
 
-
+extractNameFromTemplate('Hello, John Doe!');
+extractNameFromTemplate('Hello, Chuck Norris!');
 /**
  * Returns a first char of the given string.
  *
