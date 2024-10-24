@@ -97,10 +97,13 @@ getFirstChar('Cat');
  *   'cat'              => 'cat'
  *   '\tHello, World! ' => 'Hello, World!'
  */
-function removeLeadingAndTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
+function removeLeadingAndTrailingWhitespaces(value) {
+  return value.trim();
 }
 
+removeLeadingAndTrailingWhitespaces('Abracadabra');
+removeLeadingAndTrailingWhitespaces('cat');
+removeLeadingAndTrailingWhitespaces('Hello, World!');
 /**
  * Returns a string that repeated the specified number of times.
  *
