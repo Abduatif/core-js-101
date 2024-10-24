@@ -49,10 +49,10 @@ getStringLength('aaaaa');
  *   'John','Doe'      => 'Hello, John Doe!'
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
-function getStringFromTemplate(/* firstName, lastName */) {
-  throw new Error('Not implemented');
+function getStringFromTemplate(firstName, lastName) {
+  return `Hello, ${firstName} ${lastName}!`;
 }
-
+getStringFromTemplate('Abdulatif', 'Abdujabborov');
 /**
  * Extracts a name from template string 'Hello, First_Name Last_Name!'.
  *
