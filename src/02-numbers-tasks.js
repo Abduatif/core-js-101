@@ -37,9 +37,11 @@ getRectangleArea(5, 10);
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCircleCircumference(radius) {
+  return Math.PI * (radius + radius);
 }
+
+getCircleCircumference(10);
 
 /**
  * Returns an average of two given numbers.
